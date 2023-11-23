@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link href="css/bootstrap.min.css" rel="stylesheet">
+     <script src="js/bootstrap.bundle.min.js"></script>
+    <title>취업 정보 계정 만들기</title>
+</head>
+<body>
+<p class="h2 text-center pt-3">취업 정보 계정 만들기</p>
+<hr class="m-3">
+<p class="h6 m-3"><span class="text-danger">*</span> 필수 입력 항목</p>
+<p class="text start bg-primary text-white p-2 m-3">기본 정보</p>
+    <form action="index.html">
+        <div class="row m-2">
+        <div class="col-sm-6">
+            <label for="name" class="form-label">이 름 <span class="text-danger">*</span></label>
+            <input type="text" class="form-control" id="name">
+            <label for="email" class="form-label mt-2">이메일 <span class="text-danger">*</span></label>
+            <input type="email" class="form-control" placeholder="id@domain_name" id="email">
+        </div>
+        <div class="col-sm-6">
+            <label for="tel" class="form-label">모바일 폰 <span class="text-danger">*</span></label>
+            <input type="tel" class="form-control" placeholder="010-0000-0000" id="tel">
+            <label for="website" class="form-label mt-2">홈 페이지</label>
+            <input type="text" class="form-control" placeholder="https://" id="website">
+        </div>
+        <div class="col-sm-6">
+            <label for="pwd" class="form-label mt-2">암 호 <span class="text-danger">*</span></label>
+            <input type="password" class="form-control" placeholder="암호" id="pwd">
+            <label for="pwds" class="form-label mt-2">암호 확인 <span class="text-danger">*</span></label>
+            <input type="password" class="form-control" placeholder="암호 확인" id="pwds">
+        </div>
+        <div class="col-sm-6">
+            <label for="add" class="form-label mt-2">주 소 <span class="text-danger">*</span></label>
+            <input type="text" class="form-control" id="add">
+        </div>
+        </div>
+    </form>
+<p class="text-start bg-success text-white m-3 p-2">학 력</p>
+<form action="index.html">
+    <div class="row m-2">
+    <div class="col-sm-6">
+        <label for="school" class="form-label">학교 명 <span class="text-danger">*</span></label>
+        <input type="text" class="form-control" id="school">
+        <label for="major" class="form-label mt-2">전공 <span class="text-danger">*</span></label>
+        <input type="text" class="form-control" id="major">
+    </div>
+    <div class="col-sm-6">
+        <label for="select" class="form-label">졸업 여부 <span class="text-danger">*</span></label>
+        <select class="form-select" aria-label="Default select example" id="select">
+            <option selected>---선택---</option>
+            <option value="1">졸업</option>
+            <option value="2">졸업 예정</option>
+        </select>
+        <label for="date" class="form-label mt-2">졸업(예정)년도 <span class="text-danger">*</span></label>
+        <input type="datetime-local" class="form-select" id="date">
+    </div>
+    </div>
+</form>
+<p class="text-start bg-secondary text-white p-2 m-3">업무 경력</p>
+<span class="p-1 m-3">최종 직위</span>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" id="inlineradio1" value="option1">
+  <label class="form-check-label" for="inlineradio1">사원급</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" id="inlineradio2" value="option2">
+  <label class="form-check-label" for="inlineradio2">대리 - 과장</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" id="inlineradio3" value="option3">
+  <label class="form-check-label" for="inlineradio3">차장급 이상</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" id="inlineradio4" value="option4">
+  <label class="form-check-label" for="inlineradio4">임원급</label>
+</div>
+<div class="m-3">
+    <label for="comments" class="form-label">주요 담당 업무</label>
+    <textarea rows="5" class="form-control" placeholder="담당했던 주요 업무를 기술하시요." id="comments" name="text"></textarea>
+</div>
+<p class="text-center m-4">
+    <button type="submit" class="btn btn-light btn-outline-primary">제 출</button>
+    <button type="reset" class="btn btn-light btn-outline-primary">재 작성</button>
+</p>
+</body>
+</html>
